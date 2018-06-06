@@ -102,7 +102,7 @@ if ($files){
 	$filecount = count($files);
 	print "W katalogu {$directory} znajduje się {$filecount} plików." . PHP_EOL;
 	print "Program rozpoczyna swoją pracę." . PHP_EOL;
-	$csv = fopen("output.csv", "w");
+	$csv = fopen("publications.csv", "w");
 	$autcsv = fopen("authors.csv", "w");
 	$headers = array("id", "title", "url", "abstract", "date", "categories");
 	$autheaders = array("id", "first_name", "last_name");
